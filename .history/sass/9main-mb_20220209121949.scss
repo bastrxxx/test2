@@ -34,7 +34,7 @@ main {position: relative;height: 100vh;}
 /*=Header=*/
 .header {position: relative;background:url(../images/bg-topbot.png), url(../images/bg-mobile.jpg);background-position: bottom center, top center;height: auto;background-size: 100% auto, 960px auto;background-repeat: no-repeat;
   .header-center{z-index: 9;position: relative;
-    a.header-logo{display: block;background-color:transparent;outline:none;
+    a.header-logo{display: block;background-color:transparent;
       img{max-width:50%;width: 30%;}
     }
     .btnvideo{position: relative;display: block;background-color: transparent;border:none;outline:none;
@@ -57,7 +57,7 @@ main {position: relative;height: 100vh;}
     }
   }
 }
-.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;width: 50px;height: 50px;display: block;outline:none;background-color: transparent;
+.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;width: 50px;height: 50px;display: block;outline:none;
   i{font-size: 2rem;text-align: left;}
 }
 .offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.jpg);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;
