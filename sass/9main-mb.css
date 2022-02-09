@@ -226,7 +226,7 @@ main {
 .header .header-center .btnvideo {
   position: relative;
   display: block;
-  background: transparent;
+  background-color: transparent;
   border: none;
   outline: none;
 }
