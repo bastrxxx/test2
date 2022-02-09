@@ -165,7 +165,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 @media (max-width: 767px) 
 and (-webkit-min-device-pixel-ratio: 1) {
-  .header{height:auto;background-size: 100% auto, 130% auto;overflow: hidden;}
+  .header{height:340px;background-size: 100% auto, 130% auto;}
 }
 @media (max-width: 540px) {
   :root {--ratio:0.8;}

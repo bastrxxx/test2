@@ -470,10 +470,11 @@ main {
     background-size: 100% auto, 100% auto;
   }
 }
-@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
   .header {
-    height: 340px;
+    height: auto;
     background-size: 100% auto, 130% auto;
+    overflow: hidden;
   }
 }
 @media (max-width: 540px) {
