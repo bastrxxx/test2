@@ -57,7 +57,7 @@ main {position: relative;height: 100vh;}
     }
   }
 }
-.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background-color: transparent;
+.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
   i{font-size: 2rem;text-align: left;}
 }
 .offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.jpg);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;
