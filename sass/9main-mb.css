@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700&display=swap");
+@-webkit-keyframes laluot {
+  from {
+    -webkit-mask-position: 150% 0px;
+    mask-position: 150% 0px;
+  }
+  100% {
+    -webkit-mask-position: 0% 0px;
+    mask-position: 0% 0px;
+  }
+}
+@keyframes laluot {
+  from {
+    -webkit-mask-position: 150% 0px;
+    mask-position: 150% 0px;
+  }
+  100% {
+    -webkit-mask-position: 0% 0px;
+    mask-position: 0% 0px;
+  }
+}
+#myModal .modal-body {
+  position: relative;
+  padding: 0px;
+  overflow: inherit;
+}
+#myModal .modal-body .close {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+  border: none;
+  background: transparent;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+:root {
+  --color1: #4293cf;
+  --color2: #333333;
+  --color3: #808080;
+  --colorok: #31da70;
+  --colorerror: #ff6d6d;
+  --whitecolor: #fff;
+  --colorlink: #409ff5;
+  --spacing: 30px;
+  --colortablehead: #e4e4e4;
+  --bs-gutter-x: 1.5rem;
+  --ratio:1;
+}
+
+.error {
+  color: var(--colorerror) !important;
+}
+
+.green {
+  color: var(--colorok) !important;
+}
+
+.gold {
+  color: var(--color1) !important;
+}
+
+.blue {
+  color: var(--colorlink) !important;
+}
+
+.main {
+  color: var(--color1) !important;
+}
+
+body {
+  font-family: "Arima Madurai", cursive, Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color2);
+  background: url(../images/bg-bot.jpg) no-repeat bottom center;
+  background-size: contain;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  transition: all 0.7s ease-in-out !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  max-width: 640px !important;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#layout {
+  height: auto;
+  transform-origin: top left;
+  overflow: hidden;
+  margin-top: calc(116px * var(--ratio));
+}
+
+.tren18 {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 10%;
+  transform: scale(0.5);
+  transform-origin: top right;
+}
+
+/*=Header=*/
+.header {
+  position: relative;
+  background: url(../images/bg-topbot.png), url(../images/bg-mobile.jpg);
+  background-position: bottom center, top center;
+  height: auto;
+  background-size: 100% auto, 960px auto;
+  background-repeat: no-repeat;
+}
+.header .header-center {
+  z-index: 9;
+  position: relative;
+}
+.header .header-center a.header-logo {
+  display: block;
+  background: transparent;
+}
+.header .header-center a.header-logo img {
+  max-width: 50%;
+  width: 30%;
+}
+.header .header-center .btnvideo {
+  position: relative;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.header .header-center .btnvideo img {
+  opacity: 1;
+  max-width: 50%;
+  height: auto;
+}
+.header .header-center .btnvideo .light {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  overflow: hidden;
+  filter: brightness(3);
+  -webkit-mask-size: 300% 200%;
+  mask-size: 300% 200%;
+  -webkit-mask-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, #fff 50%, rgba(255, 255, 255, 0) 60%);
+          mask-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, #fff 50%, rgba(255, 255, 255, 0) 60%);
+  -webkit-animation: laluot linear 2.5s infinite 1.5s;
+  animation: laluot linear 2.5s infinite 1.5s;
+}
+
+.btnlist {
+  text-align: center;
+  z-index: 15;
+  left: 0;
+  top: calc(130px * var(--ratio));
+  color: #1d3355;
+  filter: drop-shadow(0px 0px 1px #ffffff);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: transparent;
+}
+.btnlist i {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.offcanvas {
+  color: var(--whitecolor);
+  background-color: #102331;
+  background-image: url(../images/bg-bot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.offcanvas .btn-close {
+  filter: invert(1);
+}
+.offcanvas .offcanvas-body .list-group .list-group-item {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-style: dotted;
+}
+.offcanvas .offcanvas-body .list-group .list-group-item a {
+  color: var(--whitecolor);
+  font-size: 1.1rem;
+}
+.offcanvas .offcanvas-body .list-group .list-group-item a:focus {
+  color: var(--color1);
+}
+.offcanvas .offcanvas-body .list-group .list-group-item a i {
+  width: 1rem;
+  text-align: center;
+}
+
+.download {
+  background-color: #2d648d;
+}
+.download .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download .container .left {
+  display: flex;
+  align-items: center;
+}
+.download .container .left .icongame {
+  width: calc(100px * var(--ratio));
+}
+.download .container .left .title-game {
+  color: var(--whitecolor);
+}
+.download .container .left .title-game h4 {
+  font-size: calc(160% * var(--ratio));
+}
+.download .container .right a img {
+  width: calc(172px * var(--ratio));
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.allbutton a.btn-1 {
+  display: block;
+}
+.allbutton a.btn-1 img {
+  width: 100%;
+}
+.allbutton a.btn-1:hover {
+  filter: brightness(120%);
+}
+
+.maincontent {
+  position: relative;
+  z-index: 11;
+}
+.maincontent .slider img {
+  width: 100%;
+}
+.maincontent .block-news .nav {
+  background-image: url(../images/bg-title-1.jpg), url(../images/bg-title-3.jpg), url(../images/bg-title-2.jpg);
+  background-position: top left, top right, top center;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-size: contain;
+}
+.maincontent .block-news .nav .nav-link {
+  padding: 0.9rem 1.5rem;
+  color: var(--whitecolor);
+  transition: none;
+  border: none;
+}
+.maincontent .block-news .nav .nav-link:hover, .maincontent .block-news .nav .nav-link:focus {
+  border: none;
+}
+.maincontent .block-news .nav .active {
+  background: url(../images/hover.png) no-repeat center center;
+  border: none;
+}
+.maincontent .block-news .nav .breadcrumb {
+  padding: 0.9rem 1.5rem;
+}
+.maincontent .block-news .nav .breadcrumb li {
+  color: var(--whitecolor);
+}
+.maincontent .block-news .nav .breadcrumb li a {
+  color: var(--whitecolor);
+}
+.maincontent .block-news .nav .breadcrumb li a:hover {
+  text-decoration: underline;
+}
+.maincontent .block-news .nav .breadcrumb .active {
+  background: none;
+  opacity: 0.5;
+}
+.maincontent .block-news .nav .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--whitecolor);
+}
+.maincontent .block-news .tab-content {
+  min-height: 401px;
+  background-image: url(../images/bg-news1.jpg), url(../images/bg-news3.jpg), url(../images/bg-news2.jpg);
+  background-position: top left, bottom right, top center;
+  background-repeat: no-repeat, no-repeat, repeat-y;
+  background-size: contain;
+}
+.maincontent .block-news .tab-content .tab-pane .list-group {
+  list-style: square;
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li {
+  background: transparent;
+  display: flex;
+  padding-left: 0;
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li a {
+  color: var(--color2);
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li a .title-news {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  font-weight: 700;
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li a .datetime {
+  color: var(--color3);
+  font-size: 13px;
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li a:hover {
+  color: var(--color1);
+}
+.maincontent .block-news .tab-content .tab-pane .list-group li:before {
+  content: "▪";
+  margin-right: 0.3rem;
+}
+.maincontent .block-news .listtin .tab-pane {
+  min-height: 800px;
+}
+.maincontent .pagination a.page-link {
+  color: var(--color2);
+}
+.maincontent .pagination .active a.page-link {
+  background-color: var(--color1);
+  color: var(--whitecolor);
+}
+.maincontent .baiviet .datetime {
+  color: var(--color3);
+}
+.maincontent .baiviet p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.maincontent .baiviet p img {
+  display: block;
+  margin: 1.2rem auto;
+  max-width: 100%;
+}
+
+.footer {
+  min-height: 200px;
+  background-color: #f2f6fc;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-content p {
+  line-height: 1.3;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.nofixed {
+  position: relative !important;
+}
+
+@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  /*	footer{position: relative;}*/
+  .header {
+    height: 617px;
+    background-size: 100% auto, 100% auto;
+  }
+}
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    height: 340px;
+    background-size: 100% auto, 130% auto;
+  }
+}
+@media (max-width: 540px) {
+  :root {
+    --ratio:0.8;
+  }
+}
+@media (max-width: 414px) {
+  .maincontent .block-news .nav .nav-link {
+    padding: 1rem 0.8rem;
+  }
+
+  :root {
+    --ratio:0.6;
+  }
+}
+@media (max-width: 320px) {
+  .maincontent .block-news .nav .nav-link {
+    padding: 1rem 0.8rem;
+  }
+}/*# sourceMappingURL=9main-mb.css.map */
